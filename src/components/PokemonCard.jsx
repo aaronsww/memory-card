@@ -11,10 +11,10 @@ function PokemonCard({ data }) {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [data.url]);
 
   return (
-    <div style={{ border: "2px solid red", margin: "8px" }}>
+    <div className="eachCard">
       <p>{data.name}</p>
       <img src={pokemonImageURL} alt="pokemon image" />
     </div>
