@@ -65,11 +65,11 @@ function App() {
 
   return (
     <div className="text-center">
-        <div>
+        <div className="text-2xl my-6 font-bold">
           <span>Your Score: {current} </span> 
-          <span>Best Score: {best}</span>
+          <span className="ml-20">Best Score: {best}</span>
         </div>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap  ">
         {cells &&
           cells.map((cell, i) => (
             <div className=""  onClick={() => clickedOnPokemon(cell.name)}>
