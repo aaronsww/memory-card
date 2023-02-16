@@ -69,7 +69,7 @@ function App() {
       <div>best score: {best}</div>
       {cells &&
         cells.map((cell, i) => (
-          <div onClick={() => clickedOnPokemon(cell.name)}>
+          <div className="text-3xl" onClick={() => clickedOnPokemon(cell.name)}>
             <PokemonCard key={i} data={cell} />
           </div>
         ))}
