@@ -14,7 +14,7 @@ function PokemonCard({ data }) {
   }, [data.url]);
 
   return (
-    <div className="eachCard">
+    <div className="border-2 border-red-300 ">
       <p>{data.name}</p>
       <img src={pokemonImageURL} alt="pokemon image" />
     </div>
