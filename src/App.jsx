@@ -14,8 +14,10 @@ function App() {
   const [best, setBest] = useState(0);
 
   function clickedOnPokemon(name) {
-    if (clickOnPokemon.has(name)) setCurrent(0);
-    else {
+    if (clickOnPokemon.has(name)) {
+      clickOnPokemon.clear();
+      setCurrent(0);
+    } else {
       const temp = new Set(clickOnPokemon);
       temp.add(name);
       setClickOnPokemon(temp);
@@ -23,21 +25,16 @@ function App() {
       setBest(Math.max(current + 1, best));
       const shuffledCells = shuffle(cells);
       setCells(shuffledCells);
-      console.log(clickOnPokemon);
     }
   }
 
   function shuffle(array) {
     let currentIndex = array.length,
       randomIndex;
-
-    // While there remain elements to shuffle.
     while (currentIndex != 0) {
-      // Pick a remaining element.
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
 
-      // And swap it with the current element.
       [array[currentIndex], array[randomIndex]] = [
         array[randomIndex],
         array[currentIndex],
