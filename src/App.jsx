@@ -64,15 +64,15 @@ function App() {
   }, []);
 
   return (
-    <div className="text-center">
-        <div className="text-2xl my-6 font-bold">
-          <span>Your Score: {current} </span> 
-          <span className="ml-20">Best Score: {best}</span>
-        </div>
-      <div className="flex flex-wrap  ">
+    <div className="text-center flex flex-col items-center">
+      <div className="text-2xl my-6 font-bold">
+        <span>Your Score: {current} </span>
+        <span className="ml-14">Best Score: {best}</span>
+      </div>
+      <div className=" flex flex-wrap w-7/12">
         {cells &&
           cells.map((cell, i) => (
-            <div className=""  onClick={() => clickedOnPokemon(cell.name)}>
+            <div className="" onClick={() => clickedOnPokemon(cell.name)}>
               <PokemonCard key={i} data={cell} />
             </div>
           ))}

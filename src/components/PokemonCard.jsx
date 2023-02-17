@@ -14,12 +14,11 @@ function PokemonCard({ data }) {
   }, [data.url]);
 
   return (
-    <div className="border-2 border-red-300 m-5 rounded-xl">
+    <div className="transition hover:scale-105  m-2 rounded-xl shadow-xl bg-neutral-50 ">
       <p className="text-xl mt-2 font-semibold">{data.name}</p>
       <img className="h-40" src={pokemonImageURL} alt="pokemon image" />
     </div>
   );
-  // add new image on hover
 }
 
 export default PokemonCard;
