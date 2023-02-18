@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors Game
+# Memory Card Game
 
 <a href="https://aaronsww.github.io/memory-card">Live Demonstartion.</a>
 
@@ -9,8 +9,7 @@ This project demonstrates React's hooks and states to simulate a memory game: th
 ### In Action
 
 <img src="" alt="">
-
- <img src="" alt="">
+<img src="" alt="">
 
 ## Credits
 
