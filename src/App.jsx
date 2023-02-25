@@ -64,11 +64,11 @@ function App() {
   }, []);
 
   return (
-    <div className="text-center flex flex-col items-center">
+    <div className="text-center flex flex-col items-center bg-sky-100">
       <img className="w-3/5" src="img\title.png" alt="" />
       <div className="text-2xl my-6 font-bold">
-        <span className="bg-red-500 p-2 rounded-xl">Your Score: {current} </span>
-        <span className="ml-14 bg-red-500 p-2 rounded-xl">Best Score: {best}</span>
+        <span className="bg-yellow-100 p-2 rounded-xl ">Your Score: {current} </span>
+        <span className="ml-14 bg-red-500 p-2 rounded-xl ">Best Score: {best}</span>
       </div>
       <div className=" flex flex-wrap w-7/12">
         {cells &&
