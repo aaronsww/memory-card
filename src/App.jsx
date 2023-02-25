@@ -67,8 +67,12 @@ function App() {
     <div className="text-center flex flex-col items-center bg-sky-100">
       <img className="w-3/5" src="img\title.png" alt="" />
       <div className="text-2xl my-6 font-bold">
-        <span className="bg-yellow-100 p-2 rounded-xl ">Your Score: {current} </span>
-        <span className="ml-14 bg-red-500 p-2 rounded-xl ">Best Score: {best}</span>
+        <span className="bg-yellow-100 p-2 rounded-xl ">
+          Your Score: {current}{" "}
+        </span>
+        <span className="ml-14 bg-red-500 p-2 rounded-xl ">
+          Best Score: {best}
+        </span>
       </div>
       <div className=" flex flex-wrap w-7/12">
         {cells &&
@@ -77,6 +81,13 @@ function App() {
               <PokemonCard key={i} data={cell} />
             </div>
           ))}
+      </div>
+      <div className="flex my-3">
+        Copyright &copy; 2022 &nbsp;
+        <a  className="flex" href="https://github.com/aaronsww">
+          aaronsww
+          <img className="ml-1 h-5" src="img\github.svg" alt="" />
+        </a>
       </div>
     </div>
   );
