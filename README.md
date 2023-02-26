@@ -13,4 +13,6 @@ This project demonstrates React's hooks and states to simulate a memory game: th
 
 ## Credits
 
-<a href="https://pokeapi.co/">RESTful Pokémon API</a>
+- <a href="https://pokeapi.co/">RESTful Pokémon API</a>
+- <a href="https://fontmeme.com/pokemon-font/">Title font</a>
+- All icons used are from <a href="https://iconify.design/">iconify.design</a>
