@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import axios from "axios";
 import PokemonCard from "./components/PokemonCard";
@@ -40,7 +39,6 @@ function App() {
         array[currentIndex],
       ];
     }
-
     return array;
   }
 
@@ -84,7 +82,7 @@ function App() {
       </div>
       <div className="flex my-3">
         Copyright &copy; 2022 &nbsp;
-        <a  className="flex" href="https://github.com/aaronsww">
+        <a className="flex" href="https://github.com/aaronsww">
           aaronsww
           <img className="ml-1 h-5" src="img\github.svg" alt="" />
         </a>
