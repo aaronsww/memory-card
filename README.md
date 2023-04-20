@@ -1,6 +1,6 @@
 # Memory Card Game
 
-<a href="https://aaronsww.github.io/memory-card">Live Demonstartion.</a>
+<a href="https://memory-card-3juej5avt-aaronsww.vercel.app/">Live Demonstartion.</a>
 
 ## Project Summary
 
@@ -8,8 +8,7 @@ This project demonstrates React's hooks and states to simulate a memory game: th
 
 ### In Action
 
-<img src="" alt="">
-<img src="" alt="">
+<img src="img\Memory Card - Google Chrome 20-04-2023 10_52_45.png" alt="">
 
 ## Credits
 
